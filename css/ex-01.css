@@ -1,51 +1,91 @@
 @charset "utf-8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul,li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: #333;
+a {
+  text-decoration: none;
+  color: #333;
 }
-.inner{
-    width: 1100px;
-    margin: auto;
+.inner {
+  width: 1100px;
+  margin: auto;
 }
-header{
-
-       
+header {
 }
-.utill{
-    height: 60px;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 10px;
-    gap: 20px;
+.utill {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  gap: 20px;
 }
-.header-bt{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    }
-.gnb{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.header-bt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.gnb {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .gnb > li {
-    height: 100%;
-width: calc(100% / 5);
+  height: 100%;
+  width: calc(100% / 5);
 }
-.gnb > li >a{
-    display: block;
-    width: 100%;
-    line-height: 60px;
-    }
-.gnb > li >a:hover {
-    color: #fff;
-    background-color: #333;
+.gnb > li > a {
+  display: block;
+  width: 100%;
+  line-height: 60px;
+}
+.gnb > li > a:hover {
+  color: #fff;
+  background-color: #333;
+}
+figure {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #888;
+  padding-top: 250px;
+}
+figure video {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.3;
+}
+figure .inner{
+    position: relative;
+    z-index: 1;
+}
+figure .inner h2 {
+  font: 120px/1 "arial";
+  color: #fff;
+  background-color: bisque;
+  margin-bottom: 20px;
+}
+figure .inner p {
+  font: 16px/1 "arial";
+  margin-bottom: 20px;
+}
+figure .inner a {
+  display: block;
+  width: 400px;
+  text-align: center;
+  border: 1px solid #333;
+  font: bold 13px/30px "arial";
+}
+figure .inner a:hover {
+  color: #fff;
+  background-color: #ffffff;
 }
