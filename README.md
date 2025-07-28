@@ -1,1 +1,2 @@
 # docode
+#favicon
