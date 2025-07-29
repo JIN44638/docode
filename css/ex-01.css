@@ -89,3 +89,30 @@ figure .inner a:hover {
   color: #fff;
   background-color: #ffffff;
 }
+footer{
+  padding: 50px 0;
+  background-color: #080707;
+}
+.upper{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #777;
+  padding-bottom: 20px;
+}
+.upper ul {
+   display: flex;
+  gap: 30px;
+}
+.lower{
+  padding-top: 20px;
+  }
+  .lower address{
+    font: 15px/1.3 "arial";
+    color: #777;
+    padding-bottom: 20px;
+  }
+  .lower p{
+    font: 12px/1 "arial";
+    color: #777;
+  }

@@ -89,24 +89,27 @@ figure .inner p {
   font: 16px/1.4 "arial";
   color: #888;
   margin-bottom: 60px;
-  }
-figure .inner a{
-    display: block;
-    width: 400px;
-    border: 1px solid #bbb;
-    font: bold 12px/30px "arial";
-    color: #fff;
-    text-align: center;
+}
+figure .inner a {
+  display: block;
+  width: 400px;
+  border: 1px solid #bbb;
+  font: bold 12px/30px "arial";
+  color: #fff;
+  text-align: center;
 }
 figure .inner a:hover {
-    background-color: #bbb;
-    color: #333;
+  background-color: #bbb;
+  color: #333;
 }
 /* <!-- 뉴스 --> */
 section {
   padding: 200px 0;
 }
-
+section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .section-wrap ul {
   display: flex;
   gap: 20px;
@@ -114,11 +117,60 @@ section {
 .section-wrap ul li {
   width: calc(100% / 4);
 }
+.section-wrap ul li h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+.section-wrap ul li p {
+  font-size: 14px;
+  color: #777;
+}
 .pic {
+  position: relative;
   height: 120px;
   overflow: hidden;
 }
 .pic img {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
   width: 100%;
 }
 /* <!-- 하단 --> */
+.footer {
+  padding: 100px 0;
+  background-color: #333;
+}
+.upper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #777;
+  padding-bottom: 5px;
+}
+
+.upper ul {
+  display: flex;
+  gap: 20px;
+}
+.upper h2 a {
+  color: #888;
+  font: bold 24px/1 "arial";
+}
+.upper ul li a {
+  color: #777;
+  font: bold 14px/1 "arial";
+}
+.lower{
+  margin-top: 20px;
+}
+.lower address{
+  font : 12px/1.3 " arial";
+  color: #777;
+   padding-bottom: 20px;
+  }
+ .lower p{
+    font: 12px/1 "arial";
+    color: #777;
+  }
